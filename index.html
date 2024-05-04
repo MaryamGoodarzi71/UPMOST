@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/app.css">
+   <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="icon" type="image/png" href="images/fav-icon.png">
+   <title>upmost in-de</title>
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+      <nav class="nav">
+         <div class="logo">
+            <h2 class="logo__text">Upmost in-de.</h2>
+         </div>
+         <ul class="menu">
+            <li data-section="home" class="menu__item menu__item--active">
+               <a href="#" class="menu__link">home</a>
+            </li>
+            <li data-section="projects" class="menu__item">
+               <a href="#" class="menu__link">project</a>
+            </li>
+            <li data-section="our-team" class="menu__item">
+               <a href="#" class="menu__link">our team</a>
+            </li>
+            <li data-section="contactus" class="menu__item">
+               <a href="#" class="menu__link">Contact us</a>
+            </li>
+            <li data-section="blog" class="menu__item">
+               <a href="#" class="menu__link">blog</a>
+            </li>
+         </ul>
+         <div class="nav-menu">
+            <ul class="mobile-menu">
+               <li data-section="home" class="mobile-menu__item mobile-menu__item--active">
+                  <a href="#" class="mobile-menu__link">home</a>
+               </li>
+               <li data-section="projects" class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">project</a>
+               </li>
+               <li data-section="our-team" class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">our team</a>
+               </li>
+               <li data-section="contactus" class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">Contact us</a>
+               </li>
+               <li data-section="blog" class="mobile-menu__item">
+                  <a href="#" class="mobile-menu__link">blog</a>
+               </li>
+               <div class="mobile-menu__plugins">
+                  <a href="#">cart
+                     <svg class="mobile-menu__icon mobile-menu__icon--bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                      </svg>
+                  </a>
+                  <a href="#">search bar
+                     <svg class="mobile-menu__icon mobile-menu__icon--search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                  </a>
+               </div>
+            </ul>
+         </div>
+         <div class="nav__icons">
+            <svg class="nav__search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+             </svg>
+            <svg class="nav__bag-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+             </svg>
+            </div>
+            <div class="nav__btn">
+               <span class="nav__btn-line"></span>
+            </div>            
+      </nav>
+      </div>
+   </header>
+   <main class="main">
+      <section class="home">
+         <div class="container">
+            <div class="home__wrapper">
+               <a href="#" class="home__arrow-link">
+                  <svg class="home__arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                   </svg>
+               </a>          
+               <p class="home__sup-title">Architecture, Construction, Interior Design</p>
+               <h1 class="home__title">We make your dreams come true</h1>
+               <a href="#" class="home__link-btn">purchase</a>
+            </div>
+         </div>
+      </section>
+      <section class="projects">
+         <div class="container">
+            <h2 class="section__title">latest projects</h2>
+            <div class="project__gallery">
+               <div class="image-gallery img-1">
+                  <div class="project__gallery-content">
+                     <span>interior design</span>
+                     <span>niavaran</span>
+                     <span>[interior]</span>
+                  </div>
+               </div>
+               <div class="image-gallery img-2">
+                  <div>
+                     <div class="project__gallery-content">
+                        <span>urban townhouse</span>
+                        <span>rasht</span>
+                        <span>[architecture]</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="image-gallery img-3">
+                  <div>
+                     <div class="project__gallery-content">
+                        <span>urban townhouse</span>
+                        <span>motel qu</span>
+                        <span>[architecture]</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="image-gallery img-4">
+                  <div>
+                     <div class="project__gallery-content">
+                        <span>interior design</span>
+                        <span>elahiyeh</span>
+                        <span>[interior]</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="image-gallery img-5">
+                  <div>
+                     <div class="project__gallery-content">
+                        <span>bedroom design</span>
+                        <span>ferdows blvd</span>
+                        <span>[interior]</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="comments">
+         <div class="container">
+            <div class="comment__wrapper">
+               <div class="comment">
+                  <div class="comment__text-wrapper">
+                     <p class="comment__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate, sed cumque ab vero iure error incidunt sit a praesentium assumenda ipsam temporibus aliquid reprehenderit ipsa expedita numquam dolores natus. Voluptatem sequi maiores</p>
+                  </div>
+                  <div class="comment__user-info">
+                     <img src="./images/comments-img1.jpg" alt="" class="comment__img">
+                     <span class="comment__user-name">amy deschamps</span>
+                     <span class="comment__country-name">berlin, germany</span>
+                  </div>
+               </div>
+               <div class="comment">
+                  <div class="comment__text-wrapper">
+                                 <p class="comment__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate, sed cumque ab vero iure error incidunt sit a praesentium assumenda</p>
+                  </div>
+                  <div class="comment__user-info">
+                     <img src="./images/comments-img2.webp" alt="" class="comment__img">
+                     <span class="comment__user-name">roxie swanson</span>
+                     <span class="comment__country-name">vienna, austria</span>
+                  </div>
+               </div>
+               <div class="comment">
+                  <div class="comment__text-wrapper">
+                     <p class="comment__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate, sed cumque ab vero iure error incidunt sit a praesentium assumenda ipsam temporibus aliquid reprehenderit ipsa expedita numquam dolores natus. Voluptatem sequi maiores
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, reprehenderit.
+                     </p>
+                  </div>
+                  <div class="comment__user-info">
+                     <img src="./images/comments-img3.webp" alt="" class="comment__img">
+                     <span class="comment__user-name">amy deschamps</span>
+                     <span class="comment__country-name">berlin, germany</span>
+                  </div>
+               </div>
+               <div class="comment">
+                  <div class="comment__text-wrapper">
+                     <p class="comment__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis voluptate, sed cumque ab vero iure error incidunt sit a praesentium assumenda ipsam temporibus aliquid reprehenderit ipsa expedita numquam dolores natus. Voluptatem sequi maiores landitiis voluptate aliquid</p>
+                  </div>
+                  <div class="comment__user-info">
+                     <img src="./images/comments-img4.jpg" alt="" class="comment__img">
+                     <span class="comment__user-name">alden dale</span>
+                     <span class="comment__country-name">marseille, france</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="our-team">
+         <div class="container">
+            <h2 class="section__title">our team</h2>
+            <div class="row">
+               <div class="col-12 col-md-6">
+                  <div class="our-team__memeber-box">
+                     <div class="our-team__photo-wrapper">
+                        <img src="images/ourteam-1.png" alt="" class="our-team__member-photo">
+                     </div>
+                     <div class="our-team__content-wrapper">
+                        <h4 class="our-team__memeber-title">scott farquhar</h4>
+                     <p class="our-team__memeber-job">Architect Founder</p>
+                     <p class="our-team__member-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, id recusandae. In consequuntur ut ea corporis, dolor adipisicing</p>
+                     <div class="our-team__member-socials">
+                        <a href="#" class="instagram">
+                           <i class="la la-instagram"></i>
+                        </a>
+                        <a href="#" class="twitter">
+                           <i class="la la-twitter"></i>
+                        </a>
+                        <a href="#" class="whatsapp">
+                           <i class="la la-whatsapp"></i>
+                        </a>
+                        <a href="#" class="facebook">
+                           <i class="la la-facebook"></i>
+                        </a>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6">
+                  <div class="our-team__memeber-box">
+                     <div class="our-team__photo-wrapper">
+                      <img src="images/ourteam-2.webp" alt="" class="our-team__member-photo">
+                     </div>
+                     <div class="our-team__content-wrapper">
+                      <h4 class="our-team__memeber-title">kaley deneen</h4>
+                      <p class="our-team__memeber-job">Project Manager</p>
+                      <p class="our-team__member-description">exercitationem id reiciendis dolorem ducimus unde totam? consectetur adipisicing elit adipisci eos impedit alias aperiam.</p>
+                      <div class="our-team__member-socials">
+                         <a href="#" class="instagram">
+                            <i class="la la-instagram"></i>
+                         </a>
+                         <a href="#" class="twitter">
+                            <i class="la la-twitter"></i>
+                         </a>
+                         <a href="#" class="whatsapp">
+                            <i class="la la-whatsapp"></i>
+                         </a>
+                         <a href="#" class="facebook">
+                            <i class="la la-facebook"></i>
+                         </a>
+                      </div>
+                     </div>
+                   </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12 col-md-6">
+                  <div class="our-team__memeber-box">
+                     <div class="our-team__photo-wrapper">
+                        <img src="images/ourteam-3.webp" alt="" class="our-team__member-photo">
+                     </div>
+                     <div class="our-team__content-wrapper">
+                        <h4 class="our-team__memeber-title">phil jhones</h4>
+                        <p class="our-team__memeber-job">Project Manager</p>
+                        <p class="our-team__member-description">unde minus ad eveniet accusantium nulla! elit adipisci eos impedit Iusto,quis veritatis maxime eum est at a dipisci, ad, facere quod!</p>
+                     <div class="our-team__member-socials">
+                        <a href="#" class="instagram">
+                           <i class="la la-instagram"></i>
+                        </a>
+                        <a href="#" class="twitter">
+                           <i class="la la-twitter"></i>
+                        </a>
+                        <a href="#" class="whatsapp">
+                           <i class="la la-whatsapp"></i>
+                        </a>
+                        <a href="#" class="facebook">
+                           <i class="la la-facebook"></i>
+                        </a>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+                  <div class="col-12 col-md-6">
+                     <div class="our-team__memeber-box">
+                        <div class="our-team__photo-wrapper">
+                           <img src="images/ourteam-4.jpg" alt="" class="our-team__member-photo">
+                        </div>
+                        <div class="our-team__content-wrapper">
+                           <h4 class="our-team__memeber-title">fred morrison</h4>
+                           <p class="our-team__memeber-job">Founding Partner</p>
+                           <p class="our-team__member-description">Iusto, quis iste Nulla dolore sunt odit quos laudantium in dolor, temporibus ducimus ad veritatis odit itaque facere a, iste ea suscipit</p>
+                           <div class="our-team__member-socials">
+                              <a href="#" class="twitter">
+                                 <i class="la la-twitter"></i>
+                              </a>
+                              <a href="#" class="whatsapp">
+                                 <i class="la la-whatsapp"></i>
+                              </a>
+                              <a href="#" class="facebook">
+                                 <i class="la la-facebook"></i>
+                              </a> 
+                              <a href="#" class="instagram">
+                                 <i class="la la-instagram"></i>
+                              </a>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="contactus">
+         <div class="container">
+            <h2 class="contactus__text">Let's start your new dream project</h2>
+            <a href="#" class="contactus__link">Contact Us</a>
+         </div>
+      </section>
+      <section class="blog">
+         <div class="container">
+            <h2 class="section__title">our blog</h2>
+            <div class="row">
+               <div class="col-12 col-md-4">
+                  <div class="blog-box">
+                     <img src="./images/blog-img1.jpg" alt="" class="blog-box__img">
+                     <p class="blog-box__title">Interior Design Trends to Know in 2023</p>
+                     <div>
+                        <i class="la la-calendar calendar"></i>
+                        <span class="blog-box__date">January 13, 2023</span>
+                     </div>
+                     <p class="blog-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aspernatur porro sunt, totam consequuntur dolore ea modi facere ipsa excepturi minus eos omnis possimus cumque minima iste</p>
+                     <a href="#" class="read-more">read more</a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="blog-box">
+                     <img src="./images/blog-img2.jpg" alt="" class="blog-box__img">
+                     <p class="blog-box__title">How to Recreate Your Favorite Celebrity Bedrooms</p>
+                     <div>
+                        <i class="la la-calendar calendar"></i>
+                        <span class="blog-box__date">March 14, 2023</span>
+                     </div>
+                     <p class="blog-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aspernatur porro sunt, totam consequuntur dolore ea modi facere ipsa excepturi minus eos omnis possimus cumque minima iste</p>
+                     <a href="#" class="read-more">read more</a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4">
+                  <div class="blog-box">
+                     <img src="./images/blog-img3.jpg" alt="" class="blog-box__img">
+                     <p class="blog-box__title">Clever’s Guide to Color Trends Through the Decades</p>
+                     <div>
+                        <i class="la la-calendar calendar"></i>
+                        <span class="blog-box__date">April 27, 2022</span>
+                     </div>
+                     <p class="blog-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aspernatur porro sunt, totam consequuntur dolore ea modi facere ipsa excepturi minus eos omnis possimus cumque minima iste</p>
+                     <a href="#" class="read-more">read more</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="newsletter">
+         <div class="container">
+            <div class="newsletter-box">
+               <div class="newsletter-box__title-wrapper">
+                  <p class="newsletter-box__title">Stay Up-to-date with Upmost in-de.</p>
+               </div>
+               <div class="newsletter-box__content">
+                  <p class="newsletter-box__text">Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news.</p>
+                  <div class="newsletter-box__signup">
+                     <form class="newsletter__form">
+                        <input type="email" placeholder="Type your Email" class="signup-input">
+                        <button class="signup-btn">Sign Up</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+      <div class="footer-up">
+            <div class="row">
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="logo">
+                     <h2 class="logo__text logo__text--footer">Upmost in-de.</h2>
+                  </div>
+                  <p class="brand-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, tempore voluptates? Quas dolore libero, ex placeat
+                  </p>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="contactus-footer">
+                     <h4 class="contactus-footer__title">Office</h4>
+                     <p class="contactus-footer__address">jordan, W atefi St, Number 110, Unit 8</p>
+                     <a href="#" class="contactus-footer__email">
+                        <i class="las la-envelope"></i>
+                       info@Upmostin-de.com</a>
+                     <p class="contactus-footer__call-number">
+                           <i class="la la-phone"></i>+2122321144
+                     </p>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4">
+                  <div class="socials">
+                     <h3 class="socials__title">Follow Socials</h3>
+                     <ul class="social__items">
+                        <li class="social__item">
+                           <a href="#" class="social__link">
+                              <i class="la la-instagram"></i>Instagram
+                           </a>
+                        </li>
+                        <li class="social__item">
+                           <a href="#" class="social__link">
+                              <i class="la la-whatsapp"></i>WhatsApp
+                           </a>
+                        </li>
+                        <li class="social__item">
+                           <a href="#" class="social__link">
+                              <i class="la la-youtube"></i>YouTube
+                           </a>
+                        </li>
+                        <li class="social__item">
+                           <a href="#" class="social__link">
+                              <i class="la la-telegram"></i>Telegram
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+      </div>
+   </div>
+      <div class="footer-down">
+         <div class="container">
+            <p class="copyright">© 2024 Upmost in-de. All rights reserved.</p>
+         </div>
+         <div class="progress">
+               <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+                   </svg>
+               </a>          
+         </div>
+      </div>
+   </footer>
+   <script src="./scripts/script.js"></script>
+</body>
+</html>
